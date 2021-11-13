@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #border1 {
+   
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 145px;margin-right: 145px;
+    height:1200px;
+} 
+#border2{
+    margin-top:30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 15%;
+    margin-top: 20%;
+    position: absolute;
+    display:block;
+    background-color: white;
+}
+body{
+    font-family:  Courier, monospace;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+button{
+    padding:5px;
+    color: #2874f0;
+    border-color: #2874f0;
+    border-radius: 10px;
+    background-color:white;
+}
+</style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<div id="border1">
+    <h1 style="margin-top: 70px;float:left;position:absolute;margin-left: 90px;">CGPA Calculator</h1>
+    <p style="margin-top:108px;float:left;position:absolute;margin-left: 140px;" >Calculate the CGPA of the current semester by calculating</p>
+    <p style="margin-top:130px;float:left;position:absolute;margin-left:90px" >the individual GPA of the semester.</p>
+    <p style="position:absolute;margin-left: 90px;margin-top:175px;float:left">Select upto which semester you have to calculate cgpa:</p>
+
+    <select style="float:left;position:absolute;margin-top:10%;margin-left:610px" id="sem">
+      <option value="1">1st sem</option>
+      <option value="2">2nd sem</option>
+      <option value="3">3rd sem</option>
+      <option value="4">4th sem</option>
+      <option value="5">5th sem</option>
+      <option value="6">6th sem</option>
+      <option value="7">7th sem</option>
+      <option value="8">8th sem</option>
+    </select>
+    
+<div id="border2" >
+ <h2  style="margin-left: 35px;" id="enter">Semester 1 </h2>
+ <table   cellspacing="1" cellpadding="10" style="padding: 30px;" >
+    <thead>
+        <tr>
+            <th>Courses:</th>
+            <th>Course credits</th>
+            <th>Grade points</th>   
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td> Course 1</td>
+        <td><input type="text" id="sem11a" value="0"/></td>
+        <td><input type="text" id="sem11b" value="0" /></td>
+        </tr>
+        <tr>
+            <td> Course 2</td>
+            <td><input type="text" id="sem12a" value="0" /></td>
+            <td><input type="text" id="sem12b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 3</td>
+            <td><input type="text" id="sem13a" value="0" /></td>
+            <td><input type="text" id="sem13b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 4</td>
+            <td><input type="text" id="sem14a" value="0" /></td>
+            <td><input type="text" id="sem14b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 5</td>
+            <td><input type="text" id="sem15a" value="0" /></td>
+            <td><input type="text" id="sem15b" value="0" /></td>
+        </tr>
+        <tr>
+            <td> Course 6</td>
+            <td><input type="text" id="sem16a" value="0" /></td>
+            <td><input type="text" id="sem16b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 7</td>
+            <td><input type="text" id="sem17a" value="0" /></td>
+            <td><input type="text" id="sem17b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 8</td>
+            <td><input type="text" id="sem18a" value="0" /></td>
+            <td><input type="text" id="sem18b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 9</td>
+            <td><input type="text" id="sem19a" value="0" /></td>
+            <td><input type="text" id="sem19b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 10</td>
+            <td><input type="text" id="sem110a" value="0" /></td>
+            <td><input type="text" id="sem110b" value="0"/></td>
+        </tr> 
+        </tbody>
+</table>
+<h2 align="center" style="color:green" id="demo"></h2>
+<h2 align="center"  style="color:green" id="demo1"></h2>
+<button id="button" onclick="reset()">Enter next semester</button>
+<button   onclick="myFunction1()">Calculate GPA</button>
+<button  onclick="cgpa()">Calculate CGPA</button>
+</div>
+</div>
+<script>
+var csum=0,ccredit=0,last,k=0;
+function myFunction1() {
+    let sum = 0,creditsum=0,gpa;
+for(let i=1;i<=10;i++)
+{
+    let product,credit,grade;
+    let a="sem1"+i+"a";
+    let b="sem1"+i+"b";
+    credit=document.getElementById(a).value;
+    grade=document.getElementById(b).value;
+    creditsum=creditsum + credit*1;
+    product= credit * grade;
+    sum=sum + product;
+    csum=csum + product;
+    ccredit=ccredit + credit * 1;   
+}
+gpa=sum/creditsum;
+document.getElementById("demo").innerHTML ="Grade Points Average (GPA):"+ gpa.toFixed(2) ;
+k=k+1;
+}
+function reset() {
+   last=document.getElementById("sem").value;
+   if(k < last){
+     document.getElementById("enter").innerHTML = "semester"+ (k+1); 
+     for(let i=1;i<=10;i++){
+       let product,credit;  
+       let a="sem1"+i+"a";
+       let b="sem1"+i+"b";
+       credit=document.getElementById(a);
+       grade=document.getElementById(b);
+       credit.value="0";grade.value="0";
+     }
+     if(k == last-1) 
+       document.getElementById("button").innerHTML = "Enter the last semester"; 
+   }
+   if(k == last){
+    alert("You have entered all the grade points and course credit upto  "+(k)+" semester! Now calculate CGPA");
+   }   
+}
+function cgpa(){
+    let cgpa1= csum/ccredit;
+    document.getElementById("demo1").innerHTML = "Cumalative Grade Points Average (CGPA):"+cgpa1.toFixed(2) ;
+ } 
+</script>
+</body>
+</html>
